@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Achievement Page</title>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+
+    <style>
+        /* BULLET LIST FOR PANEL 1 */
+        .PanelBulletList {
+            text-align: left;
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+
+        .PanelBulletList li {
+            font-size: 1.5em;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body class="EducationalBackgroundPage">
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="BackgroundVideo">
+        <source src="Background Video.webm" type="video/webm">
+    </video>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="NavigationBar">
+        <ul>
+            <li><a href="About Page.html">ABOUT</a></li>
+            <li><a href="Educational Background.html">EDUCATIONAL BACKGROUND</a></li>
+            <li><a href="Achievements.html">ACHIEVEMENTS</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE NUMBERS -->
+    <div>
+        <span class="PageNumberFirstHalf"><b>3</b></span>
+        <span class="PageNumberSecondHalf"><b>/3</b></span>
+    </div>
+
+    <!-- BACK BUTTON -->
+    <div class="BackAndNextButton">
+        <a href="Educational Background.html" class="BNButton">BACK</a>
+    </div>
+
+    <!-- CONTENTS -->
+    <div class="AchievementsContents">
+
+        <h1 class="AchievementsLabel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACHIEVEMENTS</h1>
+
+        <div class="AchievementsLayout">
+
+            <!-- BUTTONS -->
+            <div class="AchievementsGrades">
+                <h1 class="AchievementsGradesButtons" data-panel="AchievementsDayCareOne">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAY CARE 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div><img src="Click Icon.png" class="AchievementsClickIconOne"></div>
+                </h1>
+
+                <h1 class="AchievementsGradesButtons" data-panel="AchievementsKindergarten">&nbsp;&nbsp;&nbsp;&nbsp;KINDERGARTEN&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div><img src="Click Icon.png" class="AchievementsClickIconOne"></div>
+                </h1>
+
+                <h1 class="AchievementsGradesButtons" data-panel="AchievementsGradeFour">GRADE 4
+                    <div><img src="Click Icon.png" class="AchievementsClickIconThree"></div>
+                </h1>
+
+                <h1 class="AchievementsGradesButtons" data-panel="AchievementsGradeFive">GRADE 5
+                    <div><img src="Click Icon.png" class="AchievementsClickIconThree"></div>
+                </h1>
+
+                <h1 class="AchievementsGradesButtons" data-panel="AchievementsGradeSix">GRADE 6
+                    <div><img src="Click Icon.png" class="AchievementsClickIconThree"></div>
+                </h1>
+
+                <h1 class="AchievementsGradesButtons" data-panel="AchievementsGradeEleven">GRADE 11
+                    <div><img src="Click Icon.png" class="AchievementsClickIconFour"></div>
+                </h1>
+
+                <h1 class="AchievementsGradesButtons" data-panel="AchievementsGradeTwelve">GRADE 12
+                    <div><img src="Click Icon.png" class="AchievementsClickIconFive"></div>
+                </h1>
+            </div>
+
+            <!-- DESCRIPTION TEXT -->
+            <div class="AchievementsDescription">
+                Throughout my early education, I received several awards that reflected both my character and academic performance. In Day Care (2011), I was recognized as “Most Responsible,” and in Kindergarten, I ranked 5th in my class. In Grade 4, I won 1st Place in a poster-making contest, and in both Grade 5 and Grade 6, I earned Honor Roll recognition in the 3rd quarter. In senior high school, I received the Excellence Award in Grade 11, and in Grade 12, I achieved With Honors in both the second quarter and the finals, along with receiving a Good Moral Award.
+            </div>
+
+        </div>
+    </div>
+
+    <!-- POPUP PANELS ONE -->
+    <div id="AchievementsDayCareOne" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <ul class="PanelBulletList">
+                <li class="AwardFirstHover" data-panel="AchievementsMostResponsible">
+                    Most Responsible
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="AchievementsKindergarten" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <ul class="PanelBulletList">
+                <li class="AwardFirstHover" data-panel="AchievementsFifthInClass">
+                    5th in Class
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="AchievementsGradeFour" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <ul class="PanelBulletList">
+                <li class="AwardFirstHover" data-panel="AchievementsFirstPlaceInPosterMakingContest">
+                    1st Place - Poster Making Contest
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="AchievementsGradeFive" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <ul class="PanelBulletList">
+                <li class="AwardFirstHover" data-panel="AchievementsGradeFiveHonorRollThirdQuater">
+                    Honor Roll - 3rd Quarter
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="AchievementsGradeSix" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <ul class="PanelBulletList">
+                <li class="AwardFirstHover" data-panel="AchievementsGradeSixHonorRollThirdQuater">
+                    Honor Roll - 3rd Quarter
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="AchievementsGradeEleven" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <ul class="PanelBulletList">
+                <li class="AwardFirstHover" data-panel="AchievementsExcellenceAward">
+                    Excellence Award
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="AchievementsGradeTwelve" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <ul class="PanelBulletList">
+                <li class="AwardFirstHover" data-panel="AchievementsWithHonorsSecondQuarter">
+                    With Honors - Second Quarter
+                </li>
+                <li class="AwardFirstHover" data-panel="AchievementsWithHonorsFinals">
+                    With Honors - Finals
+                </li>
+                <li class="AwardFirstHover" data-panel="AchievementsGoodMoral">
+                    Good Moral
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- POPUP PANELS TWO -->
+    <div id="AchievementsMostResponsible" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <img src="AwardDaycareOne-MostResponsible.png" class="AwardSecondHover">
+        </div>
+    </div>
+
+    <div id="AchievementsFifthInClass" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <img src="AwardKindergarten-5thInClass.png" class="AwardSecondHover">
+        </div>
+    </div>
+
+    <div id="AchievementsFirstPlaceInPosterMakingContest" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <img src="AwardGrade4-PosterMaking.png" class="AwardSecondHover">
+        </div>
+    </div>
+
+    <div id="AchievementsGradeFiveHonorRollThirdQuater" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <img src="AwardGrade5-HonorRollThirdQuarter.png" class="AwardSecondHover">
+        </div>
+    </div>
+
+    <div id="AchievementsGradeSixHonorRollThirdQuater" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <img src="AwardGrade6-HonorRollThirdQuarter.png" class="AwardSecondHover">
+        </div>
+    </div>
+
+    <div id="AchievementsExcellenceAward" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <img src="AwardGrade11-ExcellenceAward.png" class="AwardSecondHover">
+        </div>
+    </div>
+
+    <div id="AchievementsWithHonorsSecondQuarter" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <img src="AwardGrade12-WithHonorsSecondQuarter.png" class="AwardSecondHover">
+        </div>
+    </div>
+
+    <div id="AchievementsWithHonorsFinals" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <img src="AwardGrade12-WithHonors.png" class="AwardSecondHover">
+        </div>
+    </div>
+
+    <div id="AchievementsGoodMoral" class="AchievementsPopUp">
+        <div class="AchievementsPopUpContent">
+            <img src="AwardGrade12-GoodMoral.png" class="AwardSecondHover">
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const buttons = document.querySelectorAll('.AchievementsGradesButtons');
+        const lists = document.querySelectorAll('.AwardFirstHover');
+        const popups = document.querySelectorAll('.AchievementsPopUp');
+
+        // Open first-level popup
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const panel = document.getElementById(btn.dataset.panel);
+                if (panel) panel.style.display = "flex";
+            });
+        });
+
+        // Open second-level popup
+        lists.forEach(list => {
+            list.addEventListener('click', () => {
+                const panel = document.getElementById(list.dataset.panel);
+                if (panel) panel.style.display = "flex";
+            });
+        });
+
+        // Close popup when clicking outside
+        popups.forEach(panel => {
+            panel.addEventListener('click', (e) => {
+                if (e.target === panel) {
+                    panel.style.display = "none";
+                }
+            });
+        });
+
+        // Open award image in new tab when clicked
+        const awardImages = document.querySelectorAll('.AwardSecondHover');
+
+        awardImages.forEach(img => {
+            img.addEventListener('click', () => {
+                window.open(img.src, '_blank');
+            });
+        });
+    </script>
+
+</body>
+</html>

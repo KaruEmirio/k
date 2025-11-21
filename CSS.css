@@ -1,0 +1,579 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+/* NAVIGATION BAR */
+.NavigationBar {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 10px 339px;
+    position: absolute;
+    margin-top: -47.2%;
+}
+
+.NavigationBar ul {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+}
+
+.NavigationBar a {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.NavigationBar a:hover {
+    transform: scale(1.25);
+    color: #d3d3d3;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* BACKGROUND VIDEO */
+body.AboutPage {
+    background-image: url("Background\ Video.webm");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+body.EducationalBackgroundPage {
+    background-image: url("Background\ Video.webm");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+body.DocumentsPage {
+    background-image: url("Background\ Video.webm");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*PAGE NUMBER*/
+.PageNumberFirstHalf {
+    position: absolute;
+    left: -200px; 
+    top: 20%;     
+    font-size: 6em; 
+    color: rgb(0, 0, 0); 
+    z-index: 2;  
+    margin-left: 19%;
+    margin-top: 9.7%;
+    font-family: inherit;
+    transition: transform 0.3s ease;
+}
+.PageNumberSecondHalf {
+    position: absolute;
+    left: -150px; 
+    top: 20%;     
+    font-size: 3.7em; 
+    color: rgb(0, 0, 0); 
+    z-index: 2;  
+    margin-left: 19%;
+    margin-top: 11.8%;
+    font-family: inherit;
+    transition: transform 0.3s ease;
+}
+.PageNumberFirstHalf:hover {
+    transform: scale(1.05);
+}
+.PageNumberSecondHalf:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*BACK AND NEXT BUTTON*/
+.BackAndNextButton {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+}
+
+.BNButton {
+    background-color: rgba(83, 83, 83, 0.8);
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.BNButton:hover {
+    background-color: rgba(120, 120, 120, 0.9);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*ABOUT PAGE*/
+.AboutPageNextButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.AboutPageAboutMeLabel {
+    margin-top: -5%;
+}
+
+.AboutButton:hover {
+    background-color: gray;
+    transform: scale(1.15);
+}
+
+.AboutPageContents h1,
+.AboutPageContents h4,
+.AboutPageContents p,
+.AboutPageContents img,
+.AboutPageContents {
+    transition: transform 0.3s ease;
+}
+
+.AboutPageContents h1:hover,
+.AboutPageContents h4:hover,
+.AboutPageContents p:hover,
+.AboutPageContents img:hover,
+.AboutPageContents span:hover {
+    transform: scale(1.1);
+}
+
+.AboutPageContents {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    font-size: larger;
+    color: black;
+    margin-top: -7%;
+}
+
+.AboutPageAboutMeLabel {
+    margin-top: -3%;
+}
+
+
+.AboutPageMyImage {
+    position: absolute; 
+    right: 8%;     
+    top: 0;             
+    width: 50%;        
+    height: auto;       
+    z-index: 2;    
+    top: -10%; 
+}
+
+.AboutPageAboutMeLabel { 
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px;   
+    border-radius: 10px;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-width: 500px;    
+    width: fit-content;  
+}
+
+.AboutPageDescription { 
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px; 
+    border-radius: 10px;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-right: 65%;
+    text-align: justify;
+}
+
+.AboutPageNameSchoolProgram {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    
+    max-width: 500px;    
+    width: fit-content;  
+}
+
+.AboutPageNameSchoolProgram:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* EDUCATIONAL BACKGROUND PAGE HOVER */
+.EducationalBackgroundGradesButtons,
+.EducationalBackgroundDescription {
+    transition: transform 0.3s ease;
+}
+
+.EducationalBackgroundGradesButtons:hover,
+.EducationalBackgroundDescription:hover {
+    transform: scale(1.05);
+}
+
+/* MAIN CONTENT */
+.EducationalBackgroundContents {
+    position: absolute;
+    top: 12%;
+    margin-left: 30%;
+    right: 10%;
+    color: black;
+}
+
+/* MAIN LABEL */
+.EducationalBackgroundLabel {
+    font-size: 1.3em;
+    width: 43%;
+    margin-bottom: 20px;
+    background-color: rgba(255,255,255,0.55);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* LAYOUT */
+.EducationalBackgroundLayout {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+
+/* GRADE BUTTONS (H1) */
+.EducationalBackgroundGradesButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+/* DESCRIPTION */
+.EducationalBackgroundDescription {
+    width: 45%;
+    font-size: 01em;
+    line-height: 1.2em;
+    text-align: justify;
+    background-color: rgba(255,255,255,0.55);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-top: -7%;
+    height: 400px;
+    overflow-y: auto;
+}
+
+/* POPUP OVERLAY */
+.EducationalBackgroundPopUp {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* POPUP CONTENT */
+.EducationalBackgroundPopUpContent {
+    background: white;
+    width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    animation: fadeIn 0.25s ease;
+    text-align: center;
+}
+
+/* STANDARD ICONS */
+.EducationalBackgroundPopUpContent img {
+    width: 70%;
+    margin-top: 20px;
+}
+
+/* CLICK ICONS FIXED */
+.EducationalBackgroundClickIconOne,
+.EducationalBackgroundClickIconTwo,
+.EducationalBackgroundClickIconThree,
+.EducationalBackgroundClickIconFour,
+.EducationalBackgroundClickIconFive,
+.EducationalBackgroundClickIconSix {
+    width: 22px;
+    height: auto;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/* DOCUMENTATION PAGE */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+/* Content over video */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white; 
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ACHIEVEMENTS PAGE HOVER */
+.AchievementsGradesButtons,
+.AchievementsDescription,
+.AwardFirstHover,
+.AwardSecondHover {
+    transition: transform 0.3s ease;
+}
+
+.AchievementsGradesButtons:hover,
+.AchievementsDescription:hover,
+.AwardFirstHover:hover,
+.AwardSecondHover:hover {
+    transform: scale(1.05);
+}
+
+/* MAIN CONTENT */
+.AchievementsContents {
+    position: absolute;
+    top: 12%;
+    margin-left: 30%;
+    right: 10%;
+    color: black;
+}
+
+/* MAIN LABEL */
+.AchievementsLabel {
+    font-size: 1.3em;
+    width: 43%;
+    margin-bottom: 20px;
+    background-color: rgba(255,255,255,0.55);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* LAYOUT */
+.AchievementsLayout {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 0.8em;
+}
+
+/* GRADE BUTTONS (H1) */
+.AchievementsGradesButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+/* DESCRIPTION */
+.AchievementsDescription {
+    width: 45%;
+    font-size: 1em;
+    line-height: 2.8em;
+    text-align: justify;
+    background-color: rgba(255,255,255,0.55);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-top: -7%;
+    height: 400px;
+    overflow-y: auto;
+}
+
+/* POPUP OVERLAY */
+.AchievementsPopUp {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* POPUP CONTENT */
+.AchievementsPopUpContent {
+    background: white;
+    width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    animation: fadeIn 0.25s ease;
+    text-align: center;
+}
+
+/* BULLET LIST FOR PANEL 1 */
+.PanelBulletList {
+    text-align: left;
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.PanelBulletList li {
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* STANDARD ICONS */
+.AchievementsPopUpContent img {
+    width: 70%;
+    margin-top: 20px;
+}
+
+/* CLICK ICONS FIXED */
+.AchievementsClickIconOne,
+.AchievementsClickIconTwo,
+.AchievementsClickIconThree,
+.AchievementsClickIconFour,
+.AchievementsClickIconFive,
+.AchievementsClickIconSix {
+    width: 22px;
+    height: auto;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* DOCUMENTATION PAGE */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+/* Content over video */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white; 
+    padding: 20px;
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+    
+
