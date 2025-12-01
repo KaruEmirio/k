@@ -1,0 +1,820 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/*===================================================*/
+/*===================================================*/
+/*====                                           ====*/
+/*====              NAVIGATION BAR               ====*/
+/*====                                           ====*/
+/*===================================================*/
+/*===================================================*/
+
+
+/* NAVIGATION BAR */
+.NavigationBar {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 10px 339px;
+    position: absolute;
+    margin-top: -47.2%;
+    margin-left: -23.2%;
+}
+
+.NavigationBar ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.NavigationBar a {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.NavigationBar a:hover {
+    transform: scale(1.25);
+    color: #d3d3d3;
+    cursor: pointer;
+}
+
+
+/*===================================================*/
+/*===================================================*/
+/*====                                           ====*/
+/*====            BACKGROUND VIDEO               ====*/
+/*====                                           ====*/
+/*===================================================*/
+/*===================================================*/
+
+/* BACKGROUND VIDEO */
+body.AboutPage {
+    background-image: url("Background\ Video.webm");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+body.EducationalBackgroundPage {
+    background-image: url("Background\ Video.webm");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+body.DocumentsPage {
+    background-image: url("Background\ Video.webm");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/*===================================================*/
+/*===================================================*/
+/*====                                           ====*/
+/*====               PAGE NUMBER                 ====*/
+/*====                                           ====*/
+/*===================================================*/
+/*===================================================*/
+
+/*PAGE NUMBER*/
+.PageNumberFirstHalf {
+    position: absolute;
+    left: -200px; 
+    top: 20%;     
+    font-size: 6em; 
+    color: rgb(0, 0, 0); 
+    z-index: 2;  
+    margin-left: 19%;
+    margin-top: 9.7%;
+    font-family: inherit;
+    transition: transform 0.3s ease;
+}
+.PageNumberSecondHalf {
+    position: absolute;
+    left: -150px; 
+    top: 20%;     
+    font-size: 3.7em; 
+    color: rgb(0, 0, 0); 
+    z-index: 2;  
+    margin-left: 19%;
+    margin-top: 11.8%;
+    font-family: inherit;
+    transition: transform 0.3s ease;
+}
+.PageNumberFirstHalf:hover {
+    transform: scale(1.05);
+}
+.PageNumberSecondHalf:hover {
+    transform: scale(1.05);
+}
+
+
+/*===================================================*/
+/*===================================================*/
+/*====                                           ====*/
+/*====              BACK AND NEXT                ====*/
+/*====                                           ====*/
+/*===================================================*/
+/*===================================================*/
+
+
+/*BACK AND NEXT BUTTON*/
+.BackAndNextButton {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+}
+
+.BNButton {
+    background-color: rgba(83, 83, 83, 0.8);
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.BNButton:hover {
+    background-color: rgba(120, 120, 120, 0.9);
+    transform: scale(1.1);
+}
+
+
+/*===================================================*/
+/*===================================================*/
+/*====                                           ====*/
+/*====                ABOUT PAGE                 ====*/
+/*====                                           ====*/
+/*===================================================*/
+/*===================================================*/
+
+
+/*ABOUT PAGE*/
+.AboutPageNextButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.AboutPageAboutMeLabel {
+    margin-top: -5%;
+}
+
+.AboutButton:hover {
+    background-color: gray;
+    transform: scale(1.15);
+}
+
+.AboutPageContents h1,
+.AboutPageContents h4,
+.AboutPageContents p,
+.AboutPageContents img,
+.AboutPageContents {
+    transition: transform 0.3s ease;
+}
+
+.AboutPageContents h1:hover,
+.AboutPageContents h4:hover,
+.AboutPageContents p:hover,
+.AboutPageContents img:hover,
+.AboutPageContents span:hover {
+    transform: scale(1.1);
+}
+
+.AboutPageContents {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    font-size: larger;
+    color: black;
+    margin-top: -7%;
+}
+
+.AboutPageAboutMeLabel {
+    margin-top: -3%;
+}
+
+
+.AboutPageMyImage {
+    position: absolute; 
+    right: 8%;     
+    top: 0;             
+    width: 50%;        
+    height: auto;       
+    z-index: 2;    
+    top: -10%; 
+}
+
+.AboutPageAboutMeLabel { 
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px;   
+    border-radius: 10px;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-width: 500px;    
+    width: fit-content;  
+}
+
+.AboutPageDescription { 
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px; 
+    border-radius: 10px;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-right: 65%;
+    text-align: justify;
+}
+
+.AboutPageNameSchoolProgram {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    
+    max-width: 500px;    
+    width: fit-content;  
+}
+
+.AboutPageNameSchoolProgram:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+/*===================================================*/
+/*===================================================*/
+/*====                                           ====*/
+/*====        EDUCATIONAL BACKGROUND PAGE        ====*/
+/*====                                           ====*/
+/*===================================================*/
+/*===================================================*/
+
+
+/* EDUCATIONAL BACKGROUND PAGE HOVER */
+.EducationalBackgroundGradesButtons,
+.EducationalBackgroundDescription {
+    transition: transform 0.3s ease;
+}
+
+.EducationalBackgroundGradesButtons:hover,
+.EducationalBackgroundDescription:hover {
+    transform: scale(1.05);
+}
+
+/* MAIN CONTENT */
+.EducationalBackgroundContents {
+    position: absolute;
+    top: 12%;
+    margin-left: 30%;
+    right: 10%;
+    color: black;
+}
+
+/* MAIN LABEL */
+.EducationalBackgroundLabel {
+    font-size: 1.3em;
+    width: 47%;
+    margin-bottom: 20px;
+    background-color: rgba(255,255,255,0.55);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* LAYOUT */
+.EducationalBackgroundLayout {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+
+/* GRADE BUTTONS (H1) */
+.EducationalBackgroundGradesButtons {
+    display: flex;
+    text-align: left;
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.EducationalBackgroundButtonIconSchoolLogo {
+    width: 20px;
+    position: absolute;
+    margin-top: 5px;
+}
+/* DESCRIPTION */
+.EducationalBackgroundDescription {
+    width: 45%;
+    font-size: 01em;
+    line-height: 1.2em;
+    text-align: justify;
+    background-color: rgba(255,255,255,0.55);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-top: -7%;
+    height: 400px;
+    overflow-y: auto;
+}
+
+/* POPUP OVERLAY */
+.EducationalBackgroundPopUp {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* POPUP CONTENT */
+.EducationalBackgroundPopUpContent {
+    background: white;
+    width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    animation: fadeIn 0.25s ease;
+    text-align: center;
+}
+
+/* STANDARD ICONS */
+.EducationalBackgroundPopUpContent img {
+    width: 70%;
+    margin-top: 20px;
+}
+
+/* CLICK ICONS FIXED */
+.EducationalBackgroundClickIconOne,
+.EducationalBackgroundClickIconTwo,
+.EducationalBackgroundClickIconThree,
+.EducationalBackgroundClickIconFour,
+.EducationalBackgroundClickIconFive,
+.EducationalBackgroundClickIconSix {
+    width: 22px;
+    height: auto;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*===================================================*/
+/*===================================================*/
+/*====                                           ====*/
+/*====            ACHIEVEMENTS PAGE              ====*/
+/*====                                           ====*/
+/*===================================================*/
+/*===================================================*/
+
+
+/* ====== DISABLE PAGE SCROLL ====== */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Blocks both vertical & horizontal scrolling */
+}
+
+
+/* MAIN CONTENT */
+.AchievementsContents {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    color: black;
+}
+
+
+/* LAYOUT */
+.AchievementsLayout {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+/* AWARDS SECTION CONTAINER */
+.AchievementsAwards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+
+/* EACH ROW OF AWARDS */
+.AchievementsRow {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* INDIVIDUAL AWARD CARD (SHRUNK SIZE) */
+.AchievementCard {
+    width: 200px;
+    background-color: rgba(255,255,255,0.65);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.AchievementCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+
+/* AWARD IMAGE */
+.AchievementImage {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+/* AWARD TITLE */
+.AchievementText {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: black;
+}
+
+
+/* AWARD DESCRIPTION */
+.AchievementDesc {
+    font-size: 0.85em;
+    color: #333;
+}
+
+
+/* RESPONSIVE FIX FOR TABLETS */
+@media (max-width: 1024px) {
+    .AchievementsContents {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .AchievementsLayout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AchievementsRow {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .AchievementCard {
+        width: 75%;
+    }
+}
+
+
+
+/* RESPONSIVE FIX FOR MOBILE */
+@media (max-width: 600px) {
+    .AchievementCard {
+        width: 90%;
+    }
+
+    .AchievementText {
+        font-size: 0.9em;
+    }
+}
+
+
+/*===================================================*/
+/*===================================================*/
+/*====                                           ====*/
+/*====              MY FAMILY PAGE               ====*/
+/*====                                           ====*/
+/*===================================================*/
+/*===================================================*/
+
+
+.MyFamilyContents {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: black;
+}
+
+.MyFamilyCards {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 20px;
+}
+
+
+/* CARD CONTAINERS (Behind images) */
+.MyFamilyMotherCard,
+.MyFamilyFatherCard,
+.MyFamilySiblingsCard {
+    position: relative;
+    width: 22%;
+    height: 380px;
+    left: 5%;
+    background-color: rgba(255,255,255,0.7);
+    padding: 40px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    z-index: 1; /* Cards stay behind images */
+    transition: box-shadow 0.3s ease;
+}
+
+.MyFamilyMotherCard:hover,
+.MyFamilyFatherCard:hover,
+.MyFamilySiblingsCard:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+
+.MyFamilyImage1,
+.MyFamilyImage2,
+.MyFamilyImage3 {
+    position: absolute;
+    width: 80%;
+    top: 20px;
+    z-index: 2; /* Images stay above cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MyFamilyImage1:hover,
+.MyFamilyImage2:hover,
+.MyFamilyImage3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+
+/* IMAGE SPECIFIC POSITIONS (Unchanged) */
+.MyFamilyImage1 { left: 10%; }
+.MyFamilyImage2 { left: 10%; }
+.MyFamilyImage3 { left: 10%; }
+
+
+/* TEXT POSITIONS (Unchanged) */
+.MyFamilyText1, .MyFamilyText2, .MyFamilyText3 {
+    position: absolute;
+    color: black;
+    font-size: 1em;
+}
+
+.MyFamilyTextOne1, .MyFamilyTextOne2 {
+    position: absolute;
+    color: black;
+    font-size: 1em;
+}
+
+.MyFamilyTextOne3 {
+    position: absolute;
+    color: black;
+    font-size: 0.7em;  
+}
+
+.MyFamilyTextTwo1, .MyFamilyTextTwo2, .MyFamilyTextTwo3 {
+    position: absolute;
+    color: black;
+    font-size: 1em;
+}
+
+.MyFamilyText1 { top: 270px; left: 10%; }
+.MyFamilyText2 { top: 270px; left: 10%; }
+.MyFamilyText3 { top: 270px; left: 10%; }
+
+.MyFamilyTextOne1 { top: 300px; left: 10%; }
+.MyFamilyTextOne2 { top: 300px; left: 10%; }
+.MyFamilyTextOne3 { top: 300px; left: 10%; }
+
+.MyFamilyTextTwo1 { top: 330px; left: 10%; }
+.MyFamilyTextTwo2 { top: 330px; left: 10%; }
+.MyFamilyTextTwo3 { top: 330px; left: 10%; }
+
+
+/*===================================================*/
+/*===================================================*/
+/*====                                           ====*/
+/*====               MY BATCH PAGE               ====*/
+/*====                                           ====*/
+/*===================================================*/
+/*===================================================*/
+
+
+/* ====== DISABLE PAGE SCROLL ====== */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.MyBatchLabel {
+    color:  black; 
+}
+
+/* MAIN CONTENT */
+.MyBatchContents {
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 70%;
+    color: black;
+}
+
+/* LAYOUT */
+.MyBatchLayout {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-right: -35%;
+}
+
+/* BATCH SECTION CONTAINER (LEFT SIDE) */
+.MyBatchAwards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* EACH ROW OF BATCH */
+.MyBatchRow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+/* INDIVIDUAL BATCH CARD */
+.MyBatchCard {
+    width: 900px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.MyBatchCard:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGE INSIDE CARD */
+.MyBatchImage {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* SCROLLABLE QUOTES CARD (RIGHT SIDE) */
+.QuotesCard {
+    width: 500px;
+    height: 420px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: -10%;
+    margin-top: 5%;
+}
+
+.QuotesTitle {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.QuotesScrollArea {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.QuotesScrollArea p {
+    font-size: 0.65em;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Custom Scrollbar */
+.QuotesScrollArea::-webkit-scrollbar {
+    width: 6px;
+}
+
+.QuotesScrollArea::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+/* RESPONSIVE FIX FOR TABLETS */
+@media (max-width: 1024px) {
+    .MyBatchContents {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .MyBatchLayout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MyBatchRow {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .MyBatchCard {
+        width: 75%;
+    }
+
+    .QuotesCard {
+        width: 80%;
+        height: 350px;
+    }
+}
+
+/* RESPONSIVE FIX FOR MOBILE */
+@media (max-width: 600px) {
+    .MyBatchCard, .QuotesCard {
+        width: 90%;
+    }
+
+    .MyBatchText {
+        font-size: 0.9em;
+    }
+
+    .QuotesTitle {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
